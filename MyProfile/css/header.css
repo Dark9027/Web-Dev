@@ -1,0 +1,229 @@
+/* header */
+header{
+    background-color: black;
+    min-height: 8vh;
+    width: 100%;
+    position:fixed;
+    box-shadow:0 0 25px aqua;
+    z-index: 10;
+    /* border: solid red 2px; */
+}
+
+/* main-menu-start */
+.free_box{
+    width: 10%;
+    height: 8vh;
+    /* border: solid 2px red; */
+}
+
+.main_menu{
+    /* border: solid 2px red; */
+    width: 90%;
+    height: 8vh;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-size:larger; */
+}
+
+/* left-logo */
+.left-logo{
+    /* border: solid 2px red; */
+    max-height: 8vh;
+    max-width: 10%;
+}
+.left-logo>a{
+    text-decoration: none;
+}
+.left-logo>a>p{
+    cursor: pointer;
+    /* border: solid 2px red; */
+    font-size: 1.7rem;
+    color:aqua;
+    /* min-height: 8vh; */
+}
+.left-logo>a>span{
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* border: solid 2px red; */
+    color: white;
+    max-height: 8vh;
+}
+
+.left-logo>a>span:hover{
+    color: gold;
+}
+
+/* mid-part */
+.mid-part{
+    /* border: solid red 2px; */
+    width: 80%;
+}
+
+.mid-part a{
+    /* border: solid red 2px; */
+    padding: 0% 6%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 8%;
+    min-height: 8vh;
+    text-decoration: none;
+    color: white;
+}
+
+.mid-part a:hover{
+    color: gold;
+}
+
+/* right-part */
+.right-part{
+    /* border:solid 2px red; */
+    min-width: 8%;
+    max-width: 12%;
+    max-height: 8vh;
+}
+
+#team{ 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+#team:hover{
+    color: gold;
+}
+
+
+@media (min-width: 900px) {
+    #openSidebarMenu{
+        display: none;
+    }
+    .sidebarIconToggle{
+        display: none;
+    }
+    .spinner{
+        display: none;
+    }
+    #sidebarMenu{
+        /* border:solid red 2px; */
+        display: none;
+    }
+}
+
+/* main-menu-end */
+
+/* side-menu-start */
+
+#openSidebarMenu{
+    visibility: hidden;
+}
+@media (max-width: 900px){
+    .free_box{
+        display: none;
+    }
+    .mid-part{
+        display: none;
+    }
+    .right-part{
+        display: none;
+    }
+    .left-logo{
+        /* border: solid 2px red; */
+        max-height: 8vh;
+        min-width: 100%;
+    }
+    .left-logo>a{
+        text-decoration: none;
+    }
+    .left-logo>a>p{
+        cursor: pointer;
+        /* border: solid 2px red; */
+        font-size: 1.2rem;
+        color:aqua;
+        /* min-height: 8vh; */
+    }
+    .left-logo>a>span{
+        font-size: 0.9rem;
+        cursor: pointer;
+        /* border: solid 2px red; */
+        color: white;
+        max-height: 8vh;
+    }
+    
+    .left-logo>a>span:hover{
+        color: gold;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        z-index: 999;
+        top: 0;
+        width: 250px;
+        margin-top: 8vh;
+        transform: translateX(-250px);
+        transition: transform 250ms ease-in-out;
+        background-color: black;
+    }
+    .menu{
+      list-style: none; 
+        margin:0;
+        padding:0;
+    }
+    .menu li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    }
+    .menu li a{
+        color: #fff;
+        display: block;
+        padding: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu li a:hover{
+        color: aqua;
+    }
+    #openSidebarMenu:checked ~ #sidebarMenu {
+        transform: translateX(0);
+    }
+    
+    input#openSidebarMenu{
+        display: none;
+    }
+    .sidebarIconToggle {
+      height: 22px;
+        width: 22px;
+        position:fixed;
+        z-index: 11;
+        top: 3vh;
+        left: 15px;
+        transition: all 0.3s;
+        cursor: pointer; 
+    }
+    .spinner {
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.3s;
+    }
+
+    .spinner.middle ,
+    .spinner.bottom{
+        margin-top: 3px;
+    }
+    #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+        opacity: 0;
+    }
+    #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+        transform: rotate(135deg);
+        margin-top: 8px;
+    }
+    #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+        transform: rotate(-135deg);
+        margin-top: -9px;
+    }
+}
+
+
+/* side-menu-close */

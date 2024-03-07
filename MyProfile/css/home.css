@@ -1,0 +1,58 @@
+
+
+
+.profile{
+    min-height: 30vh;
+    background-color:black;
+    color:white;
+    /* z-index: 200;
+    box-shadow:0 0 5px yellow; */
+}
+
+
+.profile>h2{
+    cursor: context-menu;
+    padding: 2%;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.profile>h2:hover{
+    color:aquamarine;
+}
+
+/* .profile>p{
+    cursor: context-menu;
+    font-weight: 700;
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    margin: 2%;
+    font-size: 2.4vh;
+} */
+
+.container1{
+    /* border: solid 2px red; */
+    max-height: 28vh;
+}
+
+
+
+
+.code{
+    font-size: larger;
+    cursor: context-menu;
+    min-width: 40%;
+    margin: 2%;
+    max-width: 50%;
+}
+
+#while{
+    color: aqua;
+}
+#mul:hover{
+    color:aqua;
+}
+#mul{
+    color:gold;
+}

@@ -1,0 +1,122 @@
+/* blank-div */
+.blank{
+    background-color: black;
+    min-height: 8vh;
+}
+
+/* home-page */
+
+.home{
+    min-height: 70vh;
+    width: 100%;
+    background-color:black;
+    color:white;
+}
+
+/* left-home-start */
+
+.left-home{
+    min-width: 60vw;
+    max-width: 60vw;
+    min-height: 92vh;
+    /* border: solid red 2px; */
+    background-color: black;
+}
+
+.content{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30% 0%;
+    padding: 0%;
+    /* border: solid red 2px; */
+    cursor:context-menu;
+}
+
+#hey{
+    margin-left:10%;
+    margin-bottom: 1%;
+    font-size: 3vh;
+}
+#hey:hover{
+    color:aqua;
+}
+.content>h1{
+    margin-left:10%;
+    margin-bottom: 1%;
+    font-size: 5vh;
+}
+.content>h1:hover{
+    color: aqua;
+}
+#web{
+    margin-left:10%;
+    margin-bottom: 1%;
+    font-size: 3vh;
+}
+#web:hover{
+    color:aqua;
+}
+
+#loop{
+    color: gold;
+    margin-left:10%;
+    font-size: 3.5vh;
+}
+#loop:hover{
+    color: aqua;
+}
+.content>p{
+    margin-left:10%;
+    margin-top: 1%;
+    font-size: 2.3vh;
+}
+
+#li{
+    margin-left: 10%;
+}
+#mail{
+    margin-left: 5%;
+}
+
+
+
+#hire{
+    margin-left: 5%;
+    padding: 2%;
+    background-color: black;
+    border: dotted gold;
+    color: aqua;
+    border-radius: 6px;
+}
+
+/* left-home-end */
+
+/* right-home-start */
+
+.right-home{
+    min-width: 37%;
+    max-width: 37%;
+    min-height: 92vh;
+    background-color: black;
+    /* border: solid red 2px; */
+}
+
+.image{
+    animation:bounce 2s infinite;
+    /* border: solid red 2px; */
+    margin-left: 1%;
+    margin-top: 1%;
+    padding: 2% 0%;
+    width: 100%;
+}
+
+@keyframes bounce{
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+/* right-home-end */
